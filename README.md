@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Agentic Coding 工程实践
 
-# Run and deploy your AI Studio app
+关于 Agentic Coding 工程实践的演讲幻灯片，涵盖 Harness Engineering、Plan Mode、Design Mode、Code Mode 等核心理念与实践方法。
 
-This contains everything you need to run your app locally.
+## 技术栈
 
-View your app in AI Studio: https://ai.studio/apps/592fc4da-c85a-4d7b-a375-372cbf67b552
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS 4
+- Motion (Framer Motion)
+- Lucide React (图标)
+- @lobehub/icons (Coding Agent 品牌图标)
 
-## Run Locally
+## 本地运行
 
-**Prerequisites:**  Node.js
+**前置条件：** Node.js
 
+1. 安装依赖：
+   ```bash
+   pnpm install
+   ```
+2. 启动开发服务器：
+   ```bash
+   pnpm dev
+   ```
+3. 浏览器访问 `http://localhost:3000`
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 操作方式
+
+- **键盘：** 左右箭头 / 上下箭头 / 空格键翻页
+- **触屏：** 左右滑动翻页
+- **按钮：** 点击底部 Previous / Next 按钮
+
+## 构建
+
+```bash
+pnpm build
+```

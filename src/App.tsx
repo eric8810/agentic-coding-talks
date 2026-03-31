@@ -874,6 +874,9 @@ const slides = [
         <p className="text-2xl text-zinc-500 max-w-xl">
           Agentic Coding 工程实践
         </p>
+        <a href="https://github.com/eric8810/agentic-coding-talks" target="_blank" rel="noopener noreferrer" className="text-lg text-zinc-500 hover:text-zinc-100 transition-colors font-mono">
+          github.com/eric8810/agentic-coding-talks
+        </a>
       </div>
     )
   }
