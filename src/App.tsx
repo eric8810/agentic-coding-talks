@@ -102,6 +102,17 @@ const slides = [
     )
   },
 
+  // — Vibe usage
+  {
+    id: 'vibe-usage',
+    content: (
+      <div className="flex flex-col items-center justify-center h-full w-full max-w-6xl mx-auto px-8 gap-8">
+        <h2 className="text-4xl md:text-5xl font-medium text-zinc-100">Share as a Deep User</h2>
+        <img src="/vibe-usage.png" className="max-h-[70vh] max-w-full rounded-2xl border border-zinc-800 object-contain" />
+      </div>
+    )
+  },
+
   // 1 — Purpose
   {
     id: 'purpose',
@@ -657,6 +668,16 @@ const slides = [
     )
   },
 
+  // — Design token showcase
+  {
+    id: 'design-token',
+    content: (
+      <div className="flex flex-col items-center justify-center h-full w-full max-w-6xl mx-auto px-8">
+        <img src="/design-token.png" className="max-h-[80vh] max-w-full rounded-2xl border border-zinc-800 object-contain" />
+      </div>
+    )
+  },
+
   // — Want vs Get comparison
   {
     id: 'want-vs-get',
@@ -964,7 +985,7 @@ export default function App() {
       onTouchEnd={onTouchEnd}
     >
       {/* Main Slide Area */}
-      <main className="flex-1 relative overflow-hidden flex items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-900/20 via-[#0d0d0d] to-[#0d0d0d]">
+      <main className="flex-1 relative overflow-hidden flex items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-900/20 via-[#0d0d0d] to-[#0d0d0d]" style={{ zoom: 1.12 }}>
         <AnimatePresence initial={false} custom={direction} mode="popLayout">
           <motion.div
             key={page}
@@ -979,7 +1000,7 @@ export default function App() {
               scale: { duration: 0.3, ease: 'easeOut' },
               filter: { duration: 0.3 }
             }}
-            className="absolute inset-0 w-full h-full flex items-center justify-center overflow-y-auto"
+            className="absolute inset-0 w-full h-full flex items-center justify-center overflow-hidden"
           >
             {slides[page].content}
           </motion.div>
