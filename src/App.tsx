@@ -881,25 +881,6 @@ const slides = [
         </a>
       </div>
     )
-  },
-
-  // 22 — Ending
-  {
-    id: 'ending',
-    content: (
-      <div className="flex flex-col items-center justify-center h-full text-center space-y-8 w-full max-w-4xl mx-auto px-8">
-        <img src="/wechat.jpg" className="w-[345px] h-[345px] rounded-2xl object-contain" />
-        <h2 className="text-5xl md:text-7xl font-medium text-zinc-100 tracking-tight">
-          Thanks
-        </h2>
-        <p className="text-2xl text-zinc-500 max-w-xl">
-          Agentic Coding 工程实践
-        </p>
-        <a href="https://github.com/eric8810/agentic-coding-talks" target="_blank" rel="noopener noreferrer" className="text-lg text-zinc-500 hover:text-zinc-100 transition-colors font-mono">
-          github.com/eric8810/agentic-coding-talks
-        </a>
-      </div>
-    )
   }
 ];
 
